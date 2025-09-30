@@ -32,7 +32,7 @@
     /* quote text */
     --quote-text-size: 36px;
     --quote-text-color: #1f2937;
-    --quote-text-color-weight: 300;
+    --quote-text-weight: 300;
 
 
 }
@@ -249,6 +249,39 @@ ul {
 .blue {   
     background-color: rgb(0, 0, 255, 0.8);
 }
+
+
+/* ------------ */
+/* Quote Section */
+/* ------------ */
+
+.quote-section {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--quote-section-background-color);
+    padding: 3em;
+}
+
+.quote-container {
+    width: 50%;
+}
+
+.quote {
+    font-size: var(--quote-text-size);
+    color: var(--quote-text-color);
+    font-weight: var(--quote-text-weight);
+    margin-bottom: 1em;
+}
+
+.quoted {
+}
+
+
+
+
+
 /* responsivness */
 
 @media (max-width: 600px) {
