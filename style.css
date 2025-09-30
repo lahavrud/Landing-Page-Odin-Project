@@ -51,9 +51,14 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--hero-secondary-text-color);
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }                
 
+a:hover {
+    border-bottom-color: var(--hero-secondary-text-color);
+}
 ul {
     display: flex;
     align-items: center;
@@ -116,7 +121,6 @@ ul {
 .hero-content{
     display: flex;
     padding: 2em;
-    max-width: 70em;
     gap: 2rem;
     align-self: center;
     flex-wrap: wrap;
@@ -190,16 +194,22 @@ ul {
     flex: 1;
     align-self: stretch;
     margin: 3em;
-    align-items: center;
+    gap: 3em;
+    justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
 }
 
 .info-item {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
-    justify-items: center;
+    align-items: center;
+    max-width: 235px;
+    gap: 1em;
 }
+
 
 
 
@@ -214,7 +224,7 @@ ul {
 .example-image {
     width:200px;
     height: 200px;
-    border: 5px solid black;
+    border: 5px solid var(--call-to-action-color);
     border-radius: 20%;
     transition: 0.5s ease-in-out;
 }
