@@ -1,0 +1,77 @@
+/* ================== */
+/* Main Configuration */
+/* ================== */
+
+:root {
+
+    /* main setting */
+    --main-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --dark-backgourd-color: #1f2937;
+    --call-to-action-color: #3882f6;
+
+    /* hero main text */
+    --hero-main-text-size: 3em;
+    --hero-main-text-color: #f9faf8;
+    --hero-main-text-weight: 900;
+
+    /* hero secondary text */
+    --hero-secondary-text-size: 18px;
+    --hero-secondary-text-color: #e5e5eb;
+    --hero-logo-text: #f9faf8;
+
+    /* information header text */
+    --information-header-text-size: 36px;
+    --information-header-text-color: #1f2937;
+    --information-header-text-weight: 900; 
+
+    /* quote section */
+    --quote-section-background-color: #e5e7eb;
+    /* quote text */
+    --quote-text-size: 36px;
+    --quote-text-color: #1f2937;
+    --quote-text-color-weight: 300;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+body {
+    font-family: var(--main-font-family);
+    margin: 0;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}                
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+/* ================== */
+/* Specific Styles */
+/* ================== */
+
+/* nav-bar */
+.nav-bar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+.nav-bar ul {
+    gap: 2em;
+    font-size: var(--hero-secondary-text-size);
+}
