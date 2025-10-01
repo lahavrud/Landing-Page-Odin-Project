@@ -65,7 +65,28 @@ ul {
     list-style-type: none;
 }
 
+button {
+    font-size: var(--hero-secondary-text-size);
+    color: var(--hero-secondary-text-color);
+    background-color: var(--call-to-action-color);
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
 
+button:hover {
+    transform: scale(1.1);
+    filter: brightness(115%)
+}
+
+
+footer {
+    background-color: var(--dark-backgourd-color);
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 1em;
+}
 /* =========================== */
 /* Specific Styles By Sections */
 /* =========================== */
@@ -147,20 +168,7 @@ ul {
 .hero-content .hero-button {
     display: block;
     justify-self: center;
-    font-size: var(--hero-secondary-text-size);
-    color: var(--hero-secondary-text-color);
-    background-color: var(--call-to-action-color);
-    padding: 1em;
-    border: none;
-    border-radius: 20px;
-    transition: 0.2s ease-in-out;
 }
-
-.hero-content .hero-button:hover {
-    transform: scale(1.1);
-    filter: brightness(115%)
-}
-
 
 .yawn-image {
     flex: 1 1 300px;
@@ -172,11 +180,8 @@ ul {
 .yawn-image img {
     max-width: 100%;
     height: auto;      
-    transition: 1.5s ease-in-out;
 }
-.yawn-image img:hover {
-    transform:skewY(10deg) ;
-}
+
 
 /* ------------ */
 /* Information Section */
@@ -226,11 +231,11 @@ ul {
     height: 200px;
     border: 5px solid var(--call-to-action-color);
     border-radius: 20%;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .example-image:hover {
-    transform: scale(10%);
+    transform: translateY(-10%);
 }
 
 .red {
@@ -256,7 +261,6 @@ ul {
 /* ------------ */
 
 .quote-section {
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -275,9 +279,20 @@ ul {
     margin-bottom: 1em;
 }
 
-.quoted {
+.call-to-action {
+    display: flex;
+    background-color: var(--call-to-action-color);
+    justify-self: center;
+    border-radius: 5px;
+    padding: 3em 8em;
+    margin: 5em 0;
+    gap: 8em;
+    color: var(--hero-secondary-text-color);
 }
 
+.call-to-action button {
+    border: 1.5px solid white;
+}
 
 
 
